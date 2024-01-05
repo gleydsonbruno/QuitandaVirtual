@@ -1,7 +1,10 @@
+import 'package:greengrocer/src/models/cart_item_model.dart';
 import 'package:greengrocer/src/models/item_model.dart';
+import 'package:greengrocer/src/models/user_model.dart';
 
 ItemModel apple = ItemModel(
-  description: 'A melhor maçã da região e que conta com o melhor preço de qualquer quitanda. Este item conta com vitaminas essenciais para o fortalecimento corporal, resultando em uma vida saudável.',
+  description:
+      'A melhor maçã da região e que conta com o melhor preço de qualquer quitanda. Este item conta com vitaminas essenciais para o fortalecimento corporal, resultando em uma vida saudável.',
   imgUrl: 'assets/fruits/apple.png',
   itemName: 'Maçã',
   price: 5.5,
@@ -63,9 +66,32 @@ List<ItemModel> items = [
 ];
 
 List<String> categories = [
-    'Frutas',
-    'Legumes',
-    'Verduras',
-    'Grãos',
-    'Cereais',
-  ];
+  'Frutas',
+  'Legumes',
+  'Verduras',
+  'Grãos',
+  'Cereais',
+];
+
+List<CartItemModel> cartItems = [
+  CartItemModel(
+    item: apple,
+    quantity: 2,
+  ),
+  CartItemModel(
+    item: mango,
+    quantity: 1,
+  ),
+  CartItemModel(
+    item: kiwi,
+    quantity: 3,
+  ),
+];
+
+UserModel user = UserModel(
+  phone: '99 9 9999-9999',
+  cpf: '999.999.999-99',
+  email: 'guel@hotmail',
+  name: 'Guel Pedro',
+  password: '',
+);
